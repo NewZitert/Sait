@@ -1,0 +1,232 @@
+a{text-decoration:none;
+color:inherit;}
+ul{
+margin:0;
+padding:0;
+list-style:none;}
+
+body{
+    background-color:hsl(180, 84%, 63%) ;
+   }
+
+
+.header{
+background-color:hwb(320 53% 9%);
+padding:33px 0px 32px;
+font-size:24px;
+line-height:29px;
+color:#717171;
+}
+.container{
+max-width:1200px;
+margin:0px auto;
+padding:0 15px;}
+
+.nav{display:flex;
+justify-content:space-between;
+align-items:center;}
+.menu{display:flex;
+flex-grow:1;
+flex-basis:0;}
+.phone{flex-grow:1;
+flex-basis:0;
+text-align:right;
+font-size:24px;
+line-height:29px}
+.menu-item{padding-right:30px;}
+.headline{background-color:#ca5db8;
+text-align:center;
+padding:70px 0 40px;
+}
+.title{text-transform:uppercase;
+margin:0 0 40px;
+color:#490e84;
+font-weight:700;
+font-size:64px;
+line-height:77px;}
+
+
+.headline-img{margin-bottom:25px;
+    
+    font-size:center;
+}
+
+.headline-btn{ 
+    display:flexbox;
+    justify-content: center;
+text-transform:uppercase;
+display:inline-block;
+font-weight:700;
+font-size:24px;
+line-height:29px;
+color:#fff;
+padding:22px 117px 19px;
+background-color:#490e84;
+border-radius:30px;
+}
+.new{padding:90px 0 150px;}
+
+.new-title,
+
+.color-title{
+    
+    margin:0 0 50px;
+    text-transform:uppercase;
+    text-align:center;
+    color:#717171;
+    font-size:32px;
+    line-height:39px;
+    font-weight:700;
+}
+.new-info{display:flex;
+align-items:centr;}
+.new-text p{max-width:560px;
+margin:0 0 30px;
+}
+.new-text b{ max-width:560px;
+font-size:20px;
+line-height:26px;
+display:block;}
+.images-new{margin-left:190px;}
+
+.color{padding-bottom:150px;
+}
+.color-list{display:flex;
+justify-content:space-between;
+text-align:center;}
+.color-item img{margin-bottom:20px;
+}
+.color-item h3{font-size:20px;
+line-height:26px;
+margin: 0 0 10px;
+}
+.color-item p{
+    margin:0;
+}
+.contacts-inner{
+display:flex;
+background-color:#574b63;
+color:#fff;
+}
+
+.contacts-form{
+width:100%;
+padding:140px 93px;
+text-align:center;
+}
+.contacts-title{
+margin:0 0 60px;
+text-transform:uppercase;
+font-size:32px;
+line-height:39px;
+text-align:left;
+}
+.contacts-input{padding:10px 0;
+border:none;
+border-bottom:1px solid #fff;
+display:block;
+width:100%;
+margin-bottom:20px;
+background-color: #574b63;
+}
+.contacts-input::placeholder{
+    font-size:14px;
+    line-height:18px;
+    color:#fff;
+    opacity:0.5;
+    font-family:'Ariel', sans-serif;
+    font-weight:400;
+}
+.contacts-form p{opacity:0.5;
+text-align:center;
+margin:30px 0;
+}
+.contacts-form button{
+    border:none;
+    text-transform:uppercase;
+    color:#490e84;
+    background-color:#fff;
+    border-radius:30px;
+    padding:16px 81px;
+    font-weight:400;
+    cursor:pointer;
+}
+.footer{background-color:#0A0A0A;
+}
+.footer-link{
+flex-basis:0;
+flex-grow:1;
+    
+}
+.footer-inner{
+color:#717171;
+display:flex;
+align-items:center;
+justify-content:space-between;
+padding:50px 0;
+
+}
+@media (max-width:1000px){
+    
+}
+.ff{width:100px;
+
+height:100px;
+border-radius:50%;
+position: relative;
+left:0;
+text-align:center;
+
+animation-name: kakti;
+animation-duration: 2s;
+animation-timing-function: linear;
+animation-iteration-count: infinite;
+animation-direction: alternate;
+animation-delay:2s;
+animation-fill-mode: forwards;}
+@keyframes kakti{0%{background-position: 0 0;} 50%{border-radius:0%;}
+100%{background-position: 100% 100%;}}
+
+@keyframes kakti{0%{left:0;} 50%{border-radius:0%;} 100%{left:200px;}}
+
+.fff{
+font-family: 'Times New Roman',cursive;
+font-style: oblique;
+color:red;
+position:relative;
+text-shadow: rgb(28, 223, 28) 1px 2px;
+font-size:100px;
+left:0;
+padding:200;
+text-align:center;
+
+
+animation-name:fuk;
+animation-duration:3s;
+animation-timing-function:ease;
+animation-iteration-count:infinite;
+animation-direction:alternate;
+animation-delay:0s;
+animation-fill-mode:forwards;
+}
+
+@keyframes fuk{0%{botton:0;} 40%{border-radius:0%;}10%{left:20%;} 10%{top:30%;}10%{botton:20%;}30%{right:200px;}} 
+
+logo{
+    width:100px;
+
+height:100px;
+position: relative;
+left:0;
+text-align:center;
+
+animation-name: ka;
+animation-duration: 2s;
+animation-timing-function: linear;
+animation-iteration-count: infinite;
+animation-direction: alternate;
+animation-delay:2s;
+animation-fill-mode: forwards;}
+
+@keyframes ka{0%{top:50;}50%{border-radius:0%;} 100%{top:100px;}}
+
