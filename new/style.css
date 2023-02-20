@@ -1,0 +1,239 @@
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+
+}
+
+body {
+	min-height: 100vh;
+	background: #033044;
+}
+
+.container {
+	position: relative;
+	max-width: 100%;
+	max-height: 100%;
+	overflow: hidden;
+}
+
+
+.bubbles {
+
+	position: absolute;
+	display: flex;
+}
+
+.bubbles span {
+
+	position: relative;
+	width: 30px;
+	height: 30px;
+	background: #32b6eb;
+	margin: 0 4px;
+	border-radius: 50%;
+	box-shadow: 0 0 0 10px #04415e, 0 0 50px #32b6eb,
+		0 0 100px #32b6eb;
+	animation: animate 15s linear infinite;
+	animation-duration: calc(160s/var(--i));
+}
+
+/*.bubbles span{
+	
+	position:relative;
+	width:30px;
+	height:30px;
+	background:#32b6eb;
+	margin:0 4px;
+	border-radius:50%;
+	box-shadow:0 0 0 10px #04415e, 0 0 50px #32b6eb,
+	0 0 100px #32b6eb;
+	animation: animate 15s linear infinite;
+	animation-duration: calc(50s/var(--i));
+}*/
+.bubbles span:nth-child(even) {
+	background: #daf397;
+	box-shadow: 0 0 0 10px #c3e761, 0 0 50px #daf397,
+		0 0 100px #daf397;
+}
+
+@keyframes animate {
+	0% {
+		transform: translateY(1000px) scale(0);
+
+	}
+
+	100% {
+		transform: translateY(-10px) scale(1);
+	}
+}
+
+.header nav {
+	position: absolute;
+	top: 33px;
+	left: 200px;
+	width: 100%;
+	transform: center;
+}
+
+.header nav a {
+	color: rgb(159, 250, 123);
+	background: rgb(223, 66, 223);
+	border-radius: 50%;
+	text-decoration: none;
+	padding: 20px;
+
+}
+
+.tit {
+	padding: 100px;
+	margin: 100px;
+	display: flex;
+	flex-direction: inherit;
+	opacity: 0.8;
+
+}
+
+
+.logo {
+	width: 100px;
+	height: 100px;
+
+
+	position: absolute;
+	animation: lil 15s linear infinite,
+		lilk 30s linear infinite;
+}
+
+.ppp {
+
+	display: inline-block;
+	padding: 10px 15px;
+
+	border: none;
+	width: 100px;
+	height: 96px;
+	background: url(1.png);
+	scale: 2;
+}
+
+.ppp:hover {
+	position: absolute;
+	display: flex;
+	border-radius: 100%;
+	padding: 75px;
+	opacity: 0.8;
+	cursor: pointer;
+	background: url(8.png)
+}
+
+.ooo {
+
+	height: 200px;
+	text-align: center;
+	color: black;
+}
+
+@keyframes lil {
+	0% {
+		bottom: 100%;
+		scale: 0.1;
+	}
+
+	25% {
+		bottom: 0;
+		width: 100px;
+		height: 100px;
+		scale: 0.2;
+	}
+
+	30% {
+		bottom: 0;
+		width: 50px;
+		height: 100px;
+		scale: 0.3;
+	}
+
+	35% {
+		bottom: 0;
+		width: 100px;
+		height: -50px;
+		scale: 0.4;
+	}
+
+	100% {
+		bottom: 100%;
+		scale: 0;
+	}
+}
+
+@keyframes lilk {
+	from {
+		left: 0;
+	}
+
+	to {
+		left: 100%;
+	}
+}
+
+@keyframes pol {
+	0% {
+		transform: translateY(60px) scale(0);
+	}
+
+	50% {
+		transform: translateX(1000px) scale(3);
+	}
+
+	50% {
+		top: 200px;
+		transform: translatez(-120 120px) scale(4);
+	}
+
+	100% {
+
+		transform: (1000px) scale(4);
+	}
+}
+
+.header nav a:hover {
+	color: #04415e;
+	background-color: #b0f01b;
+
+}
+
+.silka1 {
+	position: static;
+	animation: pol 6s linear infinite;
+}
+
+.silka2 {
+	position: static;
+	animation: pol 7s linear infinite;
+}
+
+.silka1 {
+	position: static;
+	animation: pol 8s linear infinite;
+}
+
+.silka3 {
+	position: static;
+	animation: pol 9s linear infinite;
+}
+
+.silka4 {
+	position: static;
+	animation: pol 10s linear infinite;
+}
+
+.silka5 {
+	position: static;
+	animation: pol 11s linear infinite;
+}
+
+.silka6 {
+	position: static;
+	animation: pol 12s linear infinite;
+}
